@@ -1,6 +1,9 @@
+// arduino nano ft232 
 int ledPin = 11;
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(9600); // it may not work, because its a clone chip, you should set  baud
+  Serial.println("Hello Computer");
   pinMode(ledPin,OUTPUT);
   
 
